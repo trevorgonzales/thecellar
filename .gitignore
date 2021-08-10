@@ -17,6 +17,7 @@
 
 # misc
 .DS_Store
+READMENEXT.md
 
 # debug
 npm-debug.log*
