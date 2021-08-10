@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Playfair+Display:wght@700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    place-content: center;
+    text-align: center;
+    background-color: #e0e0e0;
+}

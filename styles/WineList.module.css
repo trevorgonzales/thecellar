@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Playfair+Display:wght@700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    gap: 20px;
+    place-content: center;
+    text-align: center;
+}
+
+.card_red,
+.card_white {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    min-height: 250px;
+    background-size: cover;
+
+    border-radius: 50px;
+    box-shadow: 0px 7px 7px -6px rgba(0, 0, 0, 0.60);
+    transition: all 0.3s ease-in-out;
+}
+
+.card_red:hover,
+.card_white:hover {
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 23%)
+}
+
+.card_red {
+    background:url('../public/red-wine2.jpg');
+    background-position:-1% -36% !important;
+}
+.card_white {
+    background:url('../public/white-wine.jpg');
+    background-position:0% -13% !important;
+}
+
+.star {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.star > :first-child {
+    margin-right: 10px !important;
+}
+.star > p {
+    font-family: 'Playfair';
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details img {
+    object-fit: none;
+    object-position: left;
+}
+
+.white,
+.red {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.white {
+    background: rgb(245,240,204);
+    background: radial-gradient(circle, rgba(245,240,204,1) 0%, rgba(205,202,156,1) 100%);
+}
+
+.red {
+    background: rgb(226,70,59);
+    background: radial-gradient(circle, rgba(226,70,59,1) 0%, rgba(169,31,46,1) 100%);
+}
+
+.brand,
+.header {
+    margin: 0;
+    text-align: left;
+}
+
+.brand {
+    font-size: 1.2em;
+}
+
+.header{
+    font-family: 'Playfair';
+    font-weight: 700;
+    font-size: 1.6em;
+}

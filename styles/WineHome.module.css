@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Playfair+Display:wght@700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    place-content: center;
+    text-align: center;
+    background-color: #e0e0e0;
+    position: relative;
+}
+
+.search {
+    padding: 14px 22px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.item {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-radius: 16px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    color: inherit;
+    text-decoration: none;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+    box-shadow:   13px 13px 26px #cecece,
+    -13px -13px 26px #f2f2f2;
+}
+
+.item_type,
+.item_brand {
+    margin: 0;
+}
+
+.item_type {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.item_brand {
+    font-family: 'Inter', sans-serif;
+}
+
+.item_favorite {
+    background-image: url('../public/favorite.svg');
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.add_item {
+    background-image: url('../public/add-btn.svg');
+    height: 48px;
+    width: 48px;
+    display: block;
+}
